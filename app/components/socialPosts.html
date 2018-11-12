@@ -1,0 +1,15 @@
+<section class="main-section">
+    <h3>My Thoughts</h3>
+    <button type="button" class="new-btn" ng-click="$ctrl.showForm();">New Thought</button>
+    <post-form show="$ctrl.show" add-post="$ctrl.addPost(newPost);"></post-form>
+    <div class="posts">
+
+        <section class="posts-section">
+            <ul>
+                <post post="thought" ng-repeat="thought in $ctrl.list"></post>
+            </ul>
+        </section>
+
+    </div>
+
+</section>
