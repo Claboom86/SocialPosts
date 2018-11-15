@@ -11,10 +11,8 @@ const socialPosts = {
         ];
         vm.showForm = () => {
             vm.show = true;
-            console.log(vm.show);
         };
         vm.addPost = (newPost) => {
-            console.log(newPost);
             vm.show = false;
             vm.list.unshift(angular.copy(newPost));
         };

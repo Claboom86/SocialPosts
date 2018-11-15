@@ -1,8 +1,8 @@
 "use strict";
 const postForm = {
     template: `
-        <div class="new-form" ng-show="$ctrl.show" ng-submit="$ctrl.addPost({ newPost: $ctrl.newPost });">
-            <form ng-submit="$ctrl.addPost($ctrl.newPost);">
+        <div class="new-form" ng-show="$ctrl.show">
+            <form ng-submit="$ctrl.addPost({ newPost: $ctrl.newPost });">
                 <p class="label">Title</p>
                 <input id="title-input" type="text" ng-model="$ctrl.newPost.title">
                 <p class="label">Thought</p>
